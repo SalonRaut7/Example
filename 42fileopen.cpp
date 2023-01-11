@@ -11,14 +11,18 @@ int main(){
     out<<"IDK"<<endl;
     out.close();
     ifstream in;
-    string st1,st2;
+    string st1,st2,st3;
     in.open("sample42.txt");
     // in>>st1>>st2;
     // cout<<st1<<st2;
-    while(in.eof()==0){
-        getline(in,st1);
-        cout<<st1<<endl;
-    }
+    // while(in.eof()==0){
+    //     getline(in,st1);
+    //     cout<<st1<<endl;
+    // }
+    getline(in,st2);
+    getline(in,st3);
+    cout<<st2<<endl;
+    cout<<st3<<endl;
     in.close();
     return 0;
 }
